@@ -49,7 +49,7 @@ const PAGE_UP: Event = Event::simple_key(KeyCode::PageUp);
 const PAGE_DOWN: Event = Event::simple_key(KeyCode::PageDown);
 const UP: Event = Event::simple_key(KeyCode::Up);
 const DOWN: Event = Event::simple_key(KeyCode::Down);
-const CTRL_Q: Event = Event::crtl_key(KeyCode::Char('q'));
+const CTRL_Q: Event = Event::simple_key(KeyCode::Char('q'));
 
 fn main() -> termimad::Result<()> {
     let mut w = std::io::stderr();

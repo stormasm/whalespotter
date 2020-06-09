@@ -141,7 +141,7 @@ impl<'t> Screen<'t> {
             .write_in_area_on(writer, &title, &Area::new(0, 0, width, 1))?;
         self.skin.write_in_area_on(
             writer,
-            "Hit *ctrl-q* to quit, *esc* to go to parent, *↑* and *↓* to select, and *enter* to open",
+            "Hit *q* to quit, *esc* to go to parent, *↑* and *↓* to select, and *enter* to open",
             &Area::new(0, height-2, width, 1),
         )?;
         self.list_view.write_on(writer)
